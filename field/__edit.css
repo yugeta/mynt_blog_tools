@@ -1,0 +1,167 @@
+/*基本フィールド*/
+#game{
+	width:90%;
+	height:240px;
+	margin:8px auto;
+	overflow:hidden;
+	border:1px solid black;
+	background-color:white;
+	-webkit-box-shadow: 4px 4px 4px #000;
+	-moz-box-shadow: 4px 4px 4px #000;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	cursor:pointer;
+}
+#field{
+/*	border:1px solid black;*/
+/*	background-color:white;*/
+	/*
+	width:98%;
+	height:90%;
+	*/
+/*	width:90%;*/
+/*	height:240px;*/
+	
+/*	margin:8px auto;*/
+/*	-webkit-box-shadow: 2px 2px 4px #000;*/
+	
+/*	overflow:hidden;*/
+	position:relative;
+}
+
+.rows1{
+/*	width:100%;*/
+/*	width:48px;
+	height:48px;*/
+/*	background-color:red;*/
+	margin:0;
+	padding:0;
+	border:0;
+	position:relative;
+	top:40px;
+	border-collapse:collapse;
+}
+/*
+.rows tr{
+	top:-32px;
+}
+*/
+.rows1 td{
+	width:64px;
+	height:32px;
+/*	border:1px solid green;*/
+	vertical-align:bottom;
+	border:0;
+	padding:0;
+	margin:0;
+	background-image:url("img/bg/0.png");
+}
+.piece{
+	width:64px;
+	height:32px;
+	position:absolute;
+	bottom:0;
+/*	left:auto;*/
+	background-color:blue;
+/*	float:left;*/
+	vertival-align:bottom;
+	text-align:center;
+/*	display:inline;*/
+/*	position:absolute;*/
+	display:none;
+	
+}
+.rows1 td:nth-child(1) .piece{
+	height:50px;
+/*	position:relative;*/
+	bottom:0;
+/*	left:0;*/
+}
+.rows1 td:nth-child(2) .piece{
+	height:60px;
+	
+	bottom:0;
+/*	left:0;*/
+}
+
+.parts{
+/*	display:inline;*/
+	width:64px;
+	height:32px;
+	position:relative;
+	background-image:url("img/bg/0.png");
+	float:left;
+/*	top:100px;
+	left:100px;*/
+/*	top:-8px;*/
+/*	border:1px solid red;*/
+}
+
+
+.rows{
+	border:0;
+	margin:0;
+	padding:0;
+	
+	left:-32px;
+	position:relative;
+	height:16px;
+	clear:both;
+	white-space:nowrap;
+	bottom:0px;
+/*	border:1px solid red;*/
+}
+.rows:nth-child(2n){
+	left:0px;
+}
+.cols{
+	border:0;
+	margin:0;
+	padding:0;
+	width:64px;
+	height:32px;
+/*	background-image:url("img/bg.png");*/
+	float:left;
+	bottom:0;
+	position:absolute;
+	text-align:center;
+	font-size:10px;
+	background-repeat:no-repeat;
+/*	overflow:hidden;*/
+/*	background-position:top left;*/
+}
+
+.cols img{
+	display:block;
+	position:absolute;
+	bottom:0;
+}
+
+.bg0{
+/*	border:1px solid red;*/
+/*	background-color:red;*/
+	background-image:url("img/bg/00.png");
+}
+
+div.chara{
+	position:absolute;
+/*	text-align:center;*/
+/*	border:1px solid red;*/
+	
+}
+img.chara{
+	position:absolute;
+	margin:0 auto;
+	bottom:0;
+/*	border:1px solid red;*/
+/*	display:block;*/
+	/*
+	top:0;
+	left:0;
+	*/
+	/*
+	width:32px;
+	height:32px;
+	z-index:1000000;
+	*/
+}

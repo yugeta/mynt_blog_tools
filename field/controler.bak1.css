@@ -1,0 +1,129 @@
+/**
+* コントロールパット
+* 
+**/
+
+#cursor{
+	width:128px;
+	height:128px;
+	position:absolute;
+/*	bottom:-32px;
+	-webkit-transform:scale(1,0.5);*/
+	bottom:0;
+	left:0px;
+/*	border:1px solid red;*/
+	z-index:10000000;
+	
+}
+
+#cursor_key div{
+	margin:8px;
+	position:absolute;
+	bottom:0;
+	z-index:10000000;
+	text-align:center;
+	font-family:arial black;
+	opacity:0.7;
+	cursor:pointer;
+}
+#cursor_key .pad{
+	color:red;
+	border:3px solid red;
+	width:80px;
+	height:80px;
+	left:0px;
+	-webkit-border-radius:44px;
+	line-height:80px;
+	font-size:18px;
+	font-weight:bold;
+	background:-webkit-gradient(radial ,center center ,40 ,center center,15 , from(rgba(255,0,0,0.4)),to(rgba(255,0,0,0)));
+	
+}
+#cursor_key .pad:active{
+	color:#F60;
+	border:3px solid #F60;
+	width:80px;
+	height:80px;
+	left:0px;
+	-webkit-border-radius:44px;
+	line-height:80px;
+	font-size:18px;
+	font-weight:bold;
+	background:-webkit-gradient(radial ,center center ,40 ,center center,15 , from(rgba(255,48,0,0.4)),to(rgba(255,48,0,0)));
+	
+}
+#cursor_key .btn{
+	color:red;
+	border:3px solid red;
+	width:60px;
+	height:60px;
+	right:0px;
+	-webkit-border-radius:40px;
+	line-height:60px;
+	font-size:12px;
+/*	font-weight:bold;*/
+	background:-webkit-gradient(radial ,center center ,30 ,center center,10 , from(rgba(255,0,0,0.4)),to(rgba(255,0,0,0)));
+}
+#cursor_key .btn:active{
+	color:#F60;
+	border:3px solid #F60;
+	width:60px;
+	height:60px;
+	right:0px;
+	-webkit-border-radius:40px;
+	line-height:60px;
+	font-size:12px;
+/*	font-weight:bold;*/
+	background:-webkit-gradient(radial ,center center ,30 ,center center,10 , from(rgba(255,48,0,0.4)),to(rgba(255,48,0,0)));
+}
+
+.pad{
+	width:64px;
+	height:64px;
+/*	display:inline;*/
+/*	border:1px solid red;*/
+	float:left;
+	filter: alpha(opacity=60);
+	-moz-opacity:0.6;
+	opacity:0.6;
+	
+}
+#pad_1{
+	background-image:url(img/pad_1.png);
+}
+#pad_2{
+	background-image:url(img/pad_2.png);
+}
+#pad_3{
+	background-image:url(img/pad_3.png);
+}
+#pad_4{
+	background-image:url(img/pad_4.png);
+}
+
+#pad_1:focus{
+	background-image:url(img/pad_1_on.png);
+}
+#pad_2:focus{
+	background-image:url(img/pad_2_on.png);
+}
+#pad_3:focus{
+	background-image:url(img/pad_3_on.png);
+}
+#pad_4:focus{
+	background-image:url(img/pad_4_on.png);
+}
+/*
+#pad_1:active{
+	background-image:url(img/pad_1_on.png);
+}
+#pad_2:active{
+	background-image:url(img/pad_2_on.png);
+}
+#pad_3:active{
+	background-image:url(img/pad_3_on.png);
+}
+#pad_4:active{
+	background-image:url(img/pad_4_on.png);
+}
+*/

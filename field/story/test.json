@@ -1,0 +1,51 @@
+{
+	"map" : "test",
+	"chara" : {
+		"pos" : {
+			"x" : 5,
+			"y" : 5
+		},
+		"course" : 3,
+		"type" : "test"
+	},
+	"subchara" : {
+		"a2" : {
+			"message" : 3,
+			"pos" : {
+				"x" : 7,
+				"y" : 9
+			},
+			"trans" : {
+				"0":{
+					"x" : 7,
+					"y" : 4
+				}
+			},
+			"course" : 3 ,
+			"move" : "trans",
+			"type" : "test"
+		},
+		"a3":{
+			"message" : 2,
+			"pos":{
+				"x" : 2,
+				"y" : 5
+			},
+			"course" : 4,
+			"type" : "test2"
+		}
+	},
+	"next_stage" : {
+		"test2" : {
+			"x" : 9,
+			"y" : 8
+		}
+	},
+	"message" : {
+		"0" : "",
+		"1" : "It is a tree.<br>これは木です。",
+		"2" : "お～れ～はジャイア～ン！<br>が～きだいしょう～～！<br>ほげ～～～～～～～〜！！",
+		"3" : "自分a2がIDですけん",
+		"4" : ""
+	}
+}

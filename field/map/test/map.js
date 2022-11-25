@@ -1,0 +1,82 @@
+if(typeof($LIB)=='undefined'){$LIB={}}
+
+$LIB.map={
+	bgcolor:'#DCA',
+//	bgimage:'img/map/common/waku_red.png',
+	size:{
+		x:64,
+		y:32
+	},
+	surface:{
+		0:{
+			pass:0,
+			img:'img/map/common/00.png'
+		},
+		2:{
+			pass:0,
+			img:'img/map/test/road_cross.png'
+		},
+		3:{
+			pass:0,
+			img:'img/map/test/road_1.png'
+		},
+		4:{
+			pass:0,
+			img:'img/map/test/road_2.png'
+		},
+		5:{
+			pass:1,
+			img:'img/map/test/tree.png'
+		},
+		
+		6:{
+			pass:1,
+			img:'img/map/test/catsle.png'
+		},
+		9:{
+			pass:0,
+			img:'img/map/common/00.png'
+		}
+	},
+	start_pos:{
+		x:2,
+		y:1
+	},
+	chara:{
+		'1':{
+			pos:{
+				x:2,
+				y:5
+			},
+			type:"test2"
+		},
+		2:{
+			pos:{
+				x:3,
+				y:5
+			},
+			type:"test2"
+		}
+	},
+	data:[
+		'9,9,9,3,5,9,9,9',
+		'9,9,9,3,5,5,9,9',
+		'4,4,4,2,4,4,4,9',
+		'9,9,5,3,6,9,9,9',
+		'9,9,9,3,9,9,9,9',
+		'9,9,9,3,9,9,9,9',
+		'9,9,9,3,9,9,9,9',
+		'9,9,9,3,9,9,9,9,,9',
+		'9,9,9,3,9,9,9,9,9,9',
+		'9,9,9,3,9,9,9,9',
+		'9,9,9,3,9,9,9,9',
+		'9,9,9,3,9,9,9,9',
+		'9,9,9,3,9,9,9,9',
+		'9,9,9,3,9,9,9,9',
+		'9,9,9,3,9,9,9,9',
+		'9,9,9,3,9,9,9,9',
+		'9,9,9,3,9,9,9,9'
+		
+	]
+};
+

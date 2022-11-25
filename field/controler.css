@@ -1,0 +1,122 @@
+/**
+* コントロールパット
+* 
+**/
+
+/*方向キー*/
+#cursor_key .pad{
+	position:absolute;
+	width:128px;
+	height:128px;
+	line-height:128px;
+	text-align:center;
+
+	margin:0;
+	padding:0;
+	border:0;
+
+	bottom:8px;
+	left:8px;
+
+	z-index:10000000;
+	
+	opacity:0.8;
+	/*cursor:pointer;*/
+	color:transparent;
+
+	background-image:url('img/cursor_128px.png');
+}
+
+#cursor_key .pad .stick{
+	position:absolute;
+	width:80px;
+	height:80px;
+
+	margin:0;
+	padding:0;
+	border:0;
+
+	/*bottom:8px;
+	left:8px;*/
+	left:10px;
+	top:10px;
+
+	z-index:10000100;
+	
+	/*opacity:0.7;*/
+	cursor:pointer;
+	color:transparent;
+
+	background-image:url('img/stick_128.png');
+
+	/*box-shadow:10px 10px 10px rgba(0,0,0,0.5);*/
+}
+
+/*
+#pad_1{
+	background-image:url(img/pad_1.png);
+}
+#pad_2{
+	background-image:url(img/pad_2.png);
+}
+#pad_3{
+	background-image:url(img/pad_3.png);
+}
+#pad_4{
+	background-image:url(img/pad_4.png);
+}
+
+#pad_1:focus{
+	background-image:url(img/pad_1_on.png);
+}
+#pad_2:focus{
+	background-image:url(img/pad_2_on.png);
+}
+#pad_3:focus{
+	background-image:url(img/pad_3_on.png);
+}
+#pad_4:focus{
+	background-image:url(img/pad_4_on.png);
+}
+*/
+
+
+/*ボタン*/
+
+#cursor_key .btn{
+	margin:0;
+	position:absolute;
+	/*bottom:0;*/
+	z-index:10000000;
+	text-align:center;
+	font-family:arial black;
+	opacity:0.7;
+	cursor:pointer;
+	color:white;
+	border:1px solid black;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	/*right:0px;*/
+	-webkit-border-radius:40px;
+	font-size:20px;
+	/*background:-webkit-gradient(radial ,center center ,30 ,center center,10 , from(rgba(255,0,0,0.4)),to(rgba(255,0,0,0)));*/
+	background-color:#000;
+}
+#cursor_key .btn:active{
+	background-color:#AAA;
+	color:black;
+	/*border:2px solid black;*/
+	/*
+	color:#F60;
+	border:3px solid #F60;
+	width:60px;
+	height:60px;
+	right:0px;
+	-webkit-border-radius:40px;
+	line-height:60px;
+	font-size:12px;*/
+/*	font-weight:bold;*/
+	/*background:-webkit-gradient(radial ,center center ,30 ,center center,10 , from(rgba(255,48,0,0.4)),to(rgba(255,48,0,0)));*/
+}
+
