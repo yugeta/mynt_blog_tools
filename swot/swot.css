@@ -1,0 +1,74 @@
+blockquote{
+  font-size:12px;
+}
+
+h1{
+  font-size:20px;
+  font-weight:bold;
+}
+h2{
+  font-size:16px;
+  font-weight:bold;
+  border-left:10px solid #EEE;
+  border-bottom:1px solid #EEE;
+  padding:4px;
+  margin-top:40px;
+}
+h3{
+  font-size:14px;
+  font-weight:bold;
+  background-color:#EEE;
+  padding:4px;
+  margin-top:0;
+}
+
+table *{
+  font-size:12px;
+}
+th{
+  background-color:#EEE;
+}
+
+.swot-contents{
+  display:inline-block;
+  width:calc(100%);
+  border:1px solid #EEE;
+  border-radius:4px;
+  min-height:64px;
+  background-color:white;
+  font-weight:normal;
+  padding:4px;
+
+  /* overflow:scroll; */
+  word-break: break-all;
+}
+/* table.swot tr > *:nth-child(1){
+  width:40px;
+} */
+.tate{
+  width:32px;
+}
+/* .blank{
+  background-color:transparent;
+  border:0;
+} */
+.waku{
+  /* width:calc( (100% - 32px) / 3); */
+  width:calc(100% / 3);
+  /* width:100px; */
+}
+.waku2{
+  /* width:calc((100% - 32px) / 3 * 2); */
+    /* width:100px; */
+}
+/* div.cross-swot table.cross-swot{
+  width:640px;
+} */
+.cross-swot textarea{
+  min-height:64px;
+  font-size:12px;
+}
+
+.data-title-input{
+  margin-bottom:8px;
+}

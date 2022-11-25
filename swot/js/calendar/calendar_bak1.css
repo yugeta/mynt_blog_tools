@@ -1,0 +1,110 @@
+
+#apiCal{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	
+	border:1px solid #AAA;
+	border-radius:8px;
+	background-color:#EEE;
+	box-shadow:8px 8px 8px rgba(0,0,0,0.5);
+}
+
+
+
+.apiCal-title{
+	min-height:20px;
+	/*border:1px solid blue;*/
+	margin:0;
+	padding:4px;
+	font-weight:bold;
+	text-align:center;
+}
+.apiCal-submit{
+	text-align:center;
+}
+.apiCal-submit button{
+	width:80px;
+	min-height:24px;
+	line-height:24px;
+	margin:4px;
+}
+.apiCal-move{
+	width:10px;
+	height:100%;
+	vertical-align:middle;
+	
+	/*border:1px solid black;*/
+}
+.apiCal-move button{
+	width:30px;
+	/*height:100%;*/
+	min-height:40px;
+	line-height:40px;
+	margin:4px;
+}
+.apiCal-week{
+	background-color:#444;
+	color:white;
+	font-weight:bold;
+}
+/*
+.apiCal-left{
+	
+}
+
+.apiCal-right{
+	
+}
+*/
+
+#apiCal table{
+	border-collapse:collapse;
+	width:100%;
+}
+
+.apiCal-cal{
+	min-width:200px;
+	min-height:200px;
+	
+	margin:4px;
+	vertical-align:top;
+	/*border:1px solid black;*/
+}
+.apiCal-cal table{
+	background-color:white;
+}
+.apiCal-cal td{
+	border:1px solid #AAA;
+	text-align:center;
+	padding:2px;
+	/*width:30px;*/
+}
+
+
+.apiCal-cal .apiCal-date{
+	background-color:white;
+	cursor:pointer;
+	
+}
+.apiCal-cal .apiCal-date:hover{
+	/*font-weight:bold;*/
+	color:white;
+	background-color:#AAA;
+}
+.apiCal-cal .apiCal-date-out{
+	background-color:#EEE;
+}
+.apiCal-cal .apiCal-date[data-select="1"]{
+	background-color:#DDF;
+}
+.apiCal-cal .apiCal-month{
+	background-color:white;
+	cursor:pointer;
+	font-weight:bold;
+}
+.apiCal-cal .apiCal-month:hover{
+	color:white;
+	background-color:#AAA;
+}

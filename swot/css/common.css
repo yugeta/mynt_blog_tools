@@ -1,0 +1,140 @@
+/*ピンチインアウト防止*/
+body{
+	-webkit-text-size-adjust: 100%;
+}
+
+html,body{
+	height:100%;
+}
+/*nav{
+	display:block !important;
+	position:static !important;
+}*/
+main{
+	min-height:calc(100% - 56px - 120px);
+	padding:0;
+}
+main .bd-content{
+	margin-bottom:80px;
+	min-height:400px;
+}
+nav .logo{
+	max-height:50px;
+	padding:8px;
+	/*background-color:white;*/
+	vertical-align:middle;
+}
+.navbar-brand{
+	padding:0;
+	/*line-height:50px;*/
+}
+
+/*@media (min-width: 768px) {
+	nav.navbar-toggleable-sm .navbar-collapse{
+		display:inline-block!important;
+		width:auto!important;
+		text-align:right!important;
+	}
+}*/
+
+/*nav.navbar .nav-menu{
+
+}*/
+
+/* Nav */
+.navbar-nav{
+	margin:0;
+}
+.nav>li>a{
+	padding:15px;
+}
+.navbar-brand{
+	height:auto;
+}
+/* ul.nav li{
+	height:50px;
+	border:0;
+} */
+
+/*.nav-item{
+	color:white !important;
+}*/
+.navbar-dark .navbar-nav .nav-link{
+	color:white !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+	opacity:0.7;
+}
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link{
+	font-weight:bold;
+}
+
+/* Dropdown */
+/*.dropdown-menu{
+	background-color: #ed4779 !important;
+}*/
+/*.dropdown-item{
+	color:white !important;
+}*/
+.dropdown-item:hover{
+	background-color: transparent !important;
+	opacity:0.7;
+}
+
+/* Color */
+.bg-info{
+	/*background-color: #ed4779 !important;*/
+	background-color:white !important;
+	color:black!important;
+}
+.navbar{
+	border-bottom:1px solid #DDD;
+	margin-bottom: 0;
+}
+footer{
+	border-top:1px solid #DDD;
+}
+
+footer *{
+	font-size:12px;
+}
+
+
+main .bd-content img{
+  max-width:100%;
+}
+
+/* コンテンツとサイドメニューの左右入れ替え */
+
+/*body > main > div > div > div.col-12.col-md-8.pull-md-3.bd-content*/
+/*main .container .bd-content{
+	float:right !important;
+}
+main .container .bd-sideba{
+	float:left !important;
+}*/
+
+@media (max-width: 767px) {
+	.nav-wide{
+		display:none !important;
+	}
+	/*.nav-min{
+		display:list-item !important;
+	}*/
+	.headline{
+		/*background-color:pink;*/
+		padding: .5em 2em;
+		font-weight:bold;
+	}
+}
+@media (min-width: 768px) {
+	/*.nav-wide{
+		display:list-item !important;
+	}*/
+	.nav-min{
+		display:none !important;
+	}
+}

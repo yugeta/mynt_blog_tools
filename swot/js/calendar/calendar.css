@@ -1,0 +1,59 @@
+.calendar-table{
+  margin:8px;
+  /*display:none;*/
+}
+
+.calendar-table .calendar-head .calendar-title{
+  text-align:center;
+}
+.calendar-table .calendar-head .calendar-week{
+  background-color:#EEE;
+}
+
+.calendar-table th,
+.calendar-table td{
+  width:40px;
+  height:24px;
+  border:1px solid #DDD;
+  padding:2px 8px;
+  font-size:12px;
+  text-align:center;
+  cursor:pointer;
+  user-select: none;
+}
+
+.calendar-table .calendar-body td.date:hover{
+  background-color:#FFC;
+  font-weight:bold;
+}
+
+.calendar-table .calendar-body td.current{
+  background-color:#FEE;
+}
+.calendar-table .calendar-body td.nil{
+  background-color:#EEE;
+}
+.calendar-table .calendar-body td.over{
+  color:#CCC;
+}
+
+.calendar-table .calendar-title{
+  position:relative;
+}
+.calendar-table .calendar-title .prev,
+.calendar-table .calendar-title .next{
+  width:40px;
+  position:absolute;
+  display:inline-block;
+  cursor:pointer;
+}
+.calendar-table .calendar-title .prev:hover,
+.calendar-table .calendar-title .next:hover{
+  background-color:#FFC;
+}
+.calendar-table .calendar-title .prev{
+  left:0;
+}
+.calendar-table .calendar-title .next{
+  right:0;
+}

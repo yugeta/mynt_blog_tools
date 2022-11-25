@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="img/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-64.png" sizes="64x64">
+    <title>MYNT swot</title>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="lib/css/common.css" rel="stylesheet">
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="design/css/menu.css">
+  </head>
+  <body>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="bd-content col-xs-12">
+
+            <link rel="stylesheet" href="./swot.css" type="text/css" media="screen">
+            <script src="./swot.js"></script>
+            
+            <h1>SWOT analysis</h1>
+            
+            <blockquote>
+            SWOT分析（SWOT analysis）とは、<br>
+            目標を達成するために意思決定を必要としている組織や個人のプロジェクトやベンチャービジネスなどにおいて、<br>
+            外部環境や内部環境を<b>強み (Strengths)</b>、<b>弱み (Weaknesses)</b>、<b>機会 (Opportunities)</b>、<b>脅威 (Threats) </b>の4つのカテゴリーで要因分析し、<br>
+            事業環境変化に対応した経営資源の最適活用を図る経営戦略策定方法の一つである。<br>
+            組織や個人の内外の市場環境を監視、分析している。<br>
+            <a href="https://ja.wikipedia.org/wiki/SWOT%E5%88%86%E6%9E%90" target="_blank">参考:wikipedia</a>
+            </blockquote>
+            
+            <h2>分析タイトル</h2>
+            
+            <div class="row data-title">
+              <form name="data-title" class="form-horizontal">
+                <input type="hidden" name="id" value="" />
+            		<!-- <label for="swot-title">メール・アドレス</label> -->
+                <div class="col-sm-6 data-title-input">
+              		<input type="text" class="form-control" name="swot-title" id="swot-title" placeholder="分析するタイトルを入力してください。">
+                </div>
+                <div class="col-sm-6 data-title-input">
+                  <select class="form-control" name="data-select" id="data-select">
+                    <option value="">新規登録</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            
+            <h2>SWOT分析</h2>
+            
+            <div class="swot">
+              <form name="data-swot" class="form-horizontal">
+                <table class="table table-bordered swot">
+                  <tbody>
+                    <tr>
+                      <th class="blank"></th>
+                      <th class="text-center">好影響</th>
+                      <th class="text-center">悪影響</th>
+                    </tr>
+                    <tr>
+                      <th class="tate">内部環境</th>
+                      <td class="strengths">
+                        <b class="swot-title">強み (Strengths)</b>
+                        <textarea class="form-control" name="strengths" id="strengths" placeholder="強み
+            (Strengths)"></textarea>
+                      </td>
+                      <td class="weaknesses">
+                        <b class="swot-title">弱み (Weaknesses)</b>
+                        <textarea class="form-control" name="weaknesses" id="weaknesses" placeholder="弱み
+            (Weaknesses)"></textarea>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="tate">外部環境</th>
+                      <td class="opportunities">
+                        <b class="swot-title">機会 (Opportunities)</b>
+                        <textarea class="form-control" name="opportunities" id="opportunities" placeholder="機会
+            (Opportunities)"></textarea>
+                      </td>
+                      <td class="threats">
+                        <b class="swot-title">脅威 (Threats)</b>
+                        <textarea class="form-control" name="threats" id="threats" placeholder="脅威
+            (Threats)"></textarea>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            
+            <h2>クロスSWOT分析</h2>
+            
+            <div class="cross-swot table-responsive">
+              <form name="data-cross-swot" class="form-horizontal">
+                <table class="table table-bordered cross-swot">
+                  <tbody>
+                    <tr>
+                      <th class="blank" colspan="2" rowspan="2"></th>
+                      <th class="waku2 text-center" colspan="2">内部環境分析</th>
+                    </tr>
+                    <tr>
+                      <th class="waku strengths">
+                        強み
+                        <div class="swot-contents strengths"></div>
+                      </th>
+                      <th class="waku weaknesses">
+                        弱み
+                        <div class="swot-contents weaknesses"></div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <th class="tate" rowspan="2">外部環境分析</th>
+                      <th class="waku opportunities">
+                        機会
+                        <div class="swot-contents opportunities"></div>
+                      </th>
+                      <td class="waku strengths">
+                        機会×強み
+                        <textarea class="form-control" name="o_s" id="o_s" placeholder="機会に対して、強みを最大限生かすにはどうすれば良いか？"></textarea>
+                      </td>
+                      <td class="waku weaknesses">
+                        機会×弱み
+                        <textarea class="form-control" name="o_w" id="o_w" placeholder="機会に対して、弱みの原因の機会損失を回避するにはどうすればよいか？"></textarea>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th class="waku threats">
+                        脅威
+                        <div class="swot-contents threats"></div>
+                      </th>
+                      <td class="waku strengths">
+                        脅威×強み
+                        <textarea class="form-control" name="t_s" id="t_s" placeholder="迫り来る脅威を、強みでチャンスに変えることはできないか？"></textarea>
+                      </td>
+                      <td class="waku weaknesses">
+                        脅威×弱み
+                        <textarea class="form-control" name="t_w" id="t_w" placeholder="脅威と弱みが最悪の事態を招かないためには、どうすればよいか？"></textarea>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            
+            <h2>データ保存</h2>
+            
+            <div class="cross-swot">
+              <button class="btn btn-default" type="button" id="save">上記のデータをブラウザに保存する。</button>
+              <button class="btn btn-default" type="button" id="clear">上記のデータを削除する。</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </body>
+
+</html>
