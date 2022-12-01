@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Load-test | Login-page</title>
+        
+        <link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.css">
+        <script type="text/javascript" src="bootstrap-3.3.2-dist/jquery/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+        
+        <link rel="stylesheet" href="common.css">
+        <script type="text/javascript" src="common.js"></script>
+        <script type="text/javascript" src="axcel.js"></script>
+    </head>
+    
+    <body>
+    <div id="header" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="./index.html" class="navbar-brand">ContentsLoadTest</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        </div>
+		<div class="navbar-collapse collapse" id="navbar-main">
+			<ul class="nav navbar-nav">
+				<li><a href="page-1.html">page-1</a></li>
+				<li><a href="login.html">login</a></li>
+				<li><a href="bootstrap.html">bootstrap</a></li>
+			</ul>
+		</div>
+      </div>
+    </div>
+    
+        
+    <div id="contents">
+        <h1>Loginページ</h1>
+        
+<link rel="stylesheet" href="common/css/login.css">
+<main class="bs-docs-masthead" role="main">
+<form method="post">
+	<input type="hidden" name="mode" value="login">
+	<div class="login">
+		<div class="input-area">
+			<div class="input-group">
+				<span class="input-group-addon">ID</span>
+				<input class="form-control" type="text" name="login_id" autocomplete="off">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon">Password</span>
+				<input class="form-control" type="password" name="login_pw" autocomplete="off">
+			</div>
+			<div class="login-submit">
+				<button class="btn btn-default"><span>Login</span></button>
+			</div>
+			<div class="user_add">
+				<a href="<%CLASS:URL:getUrl:CLASS%>?mode=user-add">新規登録</a>
+			</div>
+		</div>
+	</div>
+</form>
+</main>
+        
+    </div>
+    
+    
+    <footer>
+        <hr>
+        <p>page-footer</p>
+    </footer>
+    
+    </body>
+</html>
