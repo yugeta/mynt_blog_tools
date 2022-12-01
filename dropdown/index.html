@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Bootstrap-dropdown</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    <script src="./jquery-1.11.3.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  </head>
+  <body style="padding-top:50px;">
+  	
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+	  <a href="http://localhost/tools/myntstudio/" class="navbar-brand">MyntStudio</a>
+	  
+      <ul class="nav navbar-nav">
+        <li class="dropdown" style="display:inline;">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Account <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="download">
+              <li><a href="?s=Account_edit">Setting</a></li>
+              <li class="divider"></li>
+              <li><a href="javascript:void(0)" onclick="location.href='?mode=logout'">Logout</a></li>
+            </ul>
+          </li>
+          <li style="display:none;">
+            <a href="?s=login">Login</a>
+          </li>
+        </ul>
+        
+    </div>
+    </div>
+  </div>
+</div>
+
+    <h1>Bootstrap-Dropdown-Demo</h1>
+	
+  </body>
+</html>
+
