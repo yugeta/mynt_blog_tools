@@ -1,0 +1,143 @@
+body,html{
+	width:100%;
+	height:100%;
+}
+body{
+	text-align:center;
+}
+#game{
+	display:inline-block;
+	box-shadow:4px 4px 4px rgba(0,0,0,0.4);
+	margin:auto auto;
+}
+
+table{
+	border-collapse:collapse;
+}
+td{
+	padding:0;
+	margin:0;
+}
+
+/*numberPlace*/
+.numberplace td{
+	width:32px;
+	height:32px;
+	border:1px solid #666;
+	cursor:pointer;
+	text-align:center;
+	vertical-align:middle;
+	background-color:white;
+	font-size:20px;
+	font-weight:bold;
+}
+.numberplace td:hover{
+	background-color:#DDD !important;
+}
+
+.numberplace tr:nth-child(1){
+	border-top:2px solid #000;
+}
+.numberplace tr:nth-child(3){
+	border-bottom:2px solid #000;
+}
+.numberplace tr:nth-child(6){
+	border-bottom:2px solid #000;
+}
+.numberplace tr:nth-child(9){
+	border-bottom:2px solid #000;
+}
+
+.numberplace td:nth-child(1){
+	border-left:2px solid #000;
+}
+.numberplace td:nth-child(3){
+	border-right:2px solid #000;
+}
+.numberplace td:nth-child(6){
+	border-right:2px solid #000;
+}
+.numberplace td:nth-child(9){
+	border-right:2px solid #000;
+}
+/*action*/
+#game .numberplace td{
+	background-color:#FFF;
+}
+#game .numberplace td[data-enable="false"]{
+	/*background-color:#EEE;*/
+	background-color:#444;
+	color:white;
+}
+#game .numberplace td[data-enable="active"]{
+	background-color:#FEE;
+}
+#game .numberplace td[data-enable="target"]{
+	background-color:#FCC;
+}
+#game .numberplace td[data-enable="bad"]{
+	background-color:#CCF;
+}
+#game .numberplace td[data-enable="complete"]{
+	background-color:#FFC;
+}
+
+
+
+/*numberKey*/
+#key{
+	position:absolute;
+	display:none;
+	box-shadow:10px 10px 10px rgba(0,0,0,0.4);
+	margin:8px;
+}
+.numberKey td{
+	width:40px;
+	height:40px;
+	background-color:blue;
+	color:white;
+	cont-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+	font-size:32px;
+	border:1px solid white;
+	cursor:pointer;
+}
+.numberKey td.clear{
+	width:auto;
+	background-color:#666;
+	font-size:24px;
+}
+.numberKey td:hover{
+	background-color:red;
+}
+.numberKey td:active{
+	background-color:black;
+}
+
+
+/*etc*/
+button{
+	margin:8px;
+	font-size:12px;
+	font-weight:bold;
+	cursor:pointer;
+	border:1px solid #CCC;
+	border-radius:4px;
+	padding:8px;
+}
+button:hover{
+	opacity:0.5;
+}
+#lists li{
+	text-align:left;
+	cursor:pointer;
+	font-size:24px;
+}
+
+/**
+* Solve
+*/
+/*td[data-error="error"]{
+	background-color:red !important;
+}*/
