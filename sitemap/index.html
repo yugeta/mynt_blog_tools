@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='ja'>
+  <head>
+    <meta charset='utf-8'/>
+    <title>MYNT-sitemap</title>
+    <link rel="stylesheet" href="css/sitemap.css"/>
+    <script type="text/javascript" src="js/lib.js"></script>
+    <script type="text/javascript" src="js/local.js"></script>
+  </head>
+  <body>
+    <main class="bs-docs-masthead bs-docs-container" id="content" role="main">
+      <div class="container">
+        <h2>SiteMap</h2>
+        <form name="form1" method="POST" class="form-block">
+          <input type="hidden" name="" value="">
+          <input type="hidden" name="width" value="1024">
+          <input type="hidden" name="height" value="768">
+          
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon">URL</span>
+              <input type="text" id="url" name="url" value="" class="form-control" placeholder="http://---">
+            </div>
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon">Max</span>
+              <input type="text" name="max" value="100" class="form-control">
+            </div>
+            <br>
+            <div style="display:none;">
+              <div class="input-group">
+                <span class="input-group-addon">UserAgent</span>
+                <input type="text" id="ua" name="ua" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.116 Safari/537.36" class="form-control">
+              </div>
+              <br>
+              <div class="input-group">
+                <span class="input-group-addon">Window Size</span>
+                <select id="viewportSize" class="form-control">
+                  <option value="1024,768">1024 x 768</option>
+                  <option value="640,480">640 x 480</option>
+                  <option value="320,240">320 x 240</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div style="text-align:right;">
+            <button id="btn" type="button" class="btn btn-primary">表 示</button>
+          </div>
+        </form>
+        Search : <div class="row prop-form"><span id="access"></span><img id="url-loading" src="img/url-loading.gif"></div>
+        Counts : <div id="counts" class="row prop-form"></div>
+        Times : <div id="times" class="row prop-form"></div>
+        URLs : <div id="preview" class="row prop-form"></div>
+      </div>
+    </main>
+  </body>
+</html>
